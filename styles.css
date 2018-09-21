@@ -550,6 +550,10 @@ a img{
   background-color: transparent;
 }
 
+.card-back {
+  background-color: transparent;
+}
+
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
