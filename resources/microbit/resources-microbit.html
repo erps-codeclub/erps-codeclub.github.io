@@ -1,30 +1,39 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>ERPS Code Club</title>
+
+    <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="../../styles.css" />
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
 </head>
-
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <a href="/"><img class="logo-image" src="../../images/erps-cc-logo.png"></a>
+              <a href="/"><img class="android-logo-image" src="../../images/erps-cc-logo.png"></a>
           </span>
             <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
-
             <!-- Navigation -->
             <div class="android-navigation-container">
                 <nav class="android-navigation mdl-navigation">
@@ -34,22 +43,19 @@
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/tips.html">Tips</a>
                 </nav>
             </div>
+            <span class="android-mobile-title mdl-layout-title">
+                <a href="/"><img class="android-logo-image" src="../../images/erps-cc-logo.png"></a>
+          </span>
+
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                <a class="mdl-navigation__link" href="/about.html">About</a>
+                <a class="mdl-navigation__link" href="/projects.html">Projects</a>
+                <a class="mdl-navigation__link" href="/resources/resources.html">Resources</a>
+                <a class="mdl-navigation__link" href="/tips.html">Tips</a>
+            </ul>
         </div>
-        <!--<div class="mdl-layout__header-row portfolio-logo-row">-->
-        <!--<span class="mdl-layout__title">-->
-        <!--<div class="portfolio-logo"></div>-->
-        <!--<span class="mdl-layout__title">Simple portfolio website</span>-->
-        <!--</span>-->
-        <!--</div>-->
-        <!--<div class="mdl-layout__header-row portfolio-navigation-row mdl-layout&#45;&#45;large-screen-only">-->
-        <!--<nav class="mdl-navigation mdl-typography&#45;&#45;body-1-force-preferred-font">-->
-        <!--<a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>-->
-        <!--<a class="mdl-navigation__link" href="blog.html">Blog</a>-->
-        <!--<a class="mdl-navigation__link" href="about.html">About</a>-->
-        <!--<a class="mdl-navigation__link" href="contact.html">Contact</a>-->
-        <!--</nav>-->
-        <!--</div>-->
-    </header>
+    </div>
+
     <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
           <img class="logo-image-small" src="../../images/erps-cc-logo-sml.png">
@@ -59,26 +65,21 @@
             <a class="mdl-navigation__link" href="/projects.html">Projects</a>
             <a class="mdl-navigation__link" href="/resources/resources.html">Resources</a>
             <a class="mdl-navigation__link" href="/tips.html">Tips</a>
-            <div class="android-drawer-separator"></div>
         </nav>
     </div>
-    <!--<div class="mdl-layout__drawer mdl-layout&#45;&#45;small-screen-only">-->
-    <!--<nav class="mdl-navigation mdl-typography&#45;&#45;body-1-force-preferred-font">-->
-    <!--<a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>-->
-    <!--<a class="mdl-navigation__link" href="blog.html">Blog</a>-->
-    <!--<a class="mdl-navigation__link" href="about.html">About</a>-->
-    <!--<a class="mdl-navigation__link" href="contact.html">Contact</a>-->
-    <!--</nav>-->
-    <!--</div>-->
-    <main class="mdl-layout__content">
+
+    <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+
+
         <div class="mdl-grid portfolio-max-width">
 
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Resources :: BBC micro:bit</h2>
+                <div class="mdl-card__title big-card-title">
+                    <h2 class="mdl-card__title-text big-card-title-text">About our Code Club</h2>
                 </div>
                 <div class="mdl-card__media">
-                    <img class="article-image" src="../../images/about-header.jpg" border="0" alt="">
+                    <img class="article-image" src=" ../../images/about-title-image.jpg" border="0" alt="">
                 </div>
 
                 <div class="mdl-grid portfolio-copy">
@@ -104,9 +105,9 @@
 
 
         </div>
-    </main>
+
+    </div>
 </div>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
-
 </html>
