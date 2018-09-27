@@ -550,6 +550,15 @@ a img{
   background-color: transparent;
 }
 
+.volunteer-img {
+  margin-top: 20px;
+  width: 40%;
+  height: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
 .card-back {
   background-color: transparent;
 }
