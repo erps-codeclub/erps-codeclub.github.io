@@ -576,3 +576,7 @@ img.article-image {
 .big-card-title-text {
   color: white;
 }
+
+.projects-list {
+  width: 300px;
+}
